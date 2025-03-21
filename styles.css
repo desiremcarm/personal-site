@@ -132,7 +132,7 @@ footer {
   }
 
   .skill svg {
-    width: 7em;
+    width: 5em;
     display: block;
     margin: auto;
   }
@@ -147,6 +147,18 @@ footer {
 
   details summary[role="button"]::after {
     height: calc(0.2rem * var(--pico-line-height, 1.5));
+  }
+
+  .explain > p:first-child {
+    margin-top: -10px;
+    font-size: 1.3em;
+  }
+
+  .explain > :nth-child(2) {
+    margin-top: 8px;
+    font-size: 1em;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   footer {
