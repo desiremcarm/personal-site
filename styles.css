@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border: 5px solid #e5e0f4;
+  border-radius: 100px;
+}
+
+.content img {
+  width: 8em;
+  display: block;
+  margin: auto;
+}
+
+nav i svg {
+  margin-left: -10px;
+  width: 25px !important;
+}
+
+nav {
+  border-radius: 40px;
+  height: 30px;
+  padding: 1em;
+  margin-top: 15px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 10em;
+  color: #e5e0f4;
+}
+
+h2 i svg {
+  width: 0.3em;
+  margin-left: -45px;
+}
+
+.hero {
+  margin-top: 4em;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.hero > :nth-child(2) {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero > :nth-child(3) {
+  margin-top: -18px;
+  margin-bottom: 2.5em;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.skill svg {
+  width: 11em;
+}
+
+.skill {
+  display: flex;
+  gap: 20px;
+  width: 500px;
+}
+
+.explain > p:first-child {
+  font-weight: bolder;
+  font-size: 1.2em;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.explain > :nth-child(2) {
+  margin-top: -15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+details summary[role="button"]::after {
+  margin-top: -20px;
+  height: calc(0.2rem * var(--pico-line-height, 1.5));
+}
+
+footer {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    display: block;
+    width: 100%;
+    font-size: 2.8em;
+    text-align: center;
+  }
+
+  h2 i svg {
+    visibility: hidden;
+  }
+
+  .skill {
+    flex-direction: column;
+  }
+
+  .skill svg {
+    width: 7em;
+    display: block;
+    margin: auto;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  summary :nth-child(1) {
+    font-size: 0.9em;
+  }
+
+  details summary[role="button"]::after {
+    height: calc(0.2rem * var(--pico-line-height, 1.5));
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
